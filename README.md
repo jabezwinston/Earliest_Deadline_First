@@ -1,21 +1,26 @@
-Wrote a very simple EDF scheduler as a part of RTOS curriculum.It is recommended to compile the program with GCC.The old Turbo C too will work :-P
-Hope you like it. :-)
+# Earliest Deadline First
+
+Wrote a very simple EDF scheduler as a part of RTOS curriculum. It is recommended to compile the program with GCC. The old Turbo C too will work :stuck_out_tongue_closed_eyes:
+Hope you like it. :smile:
+
 Use the following command to compile in GCC.
 
-gcc main.c func_def.c  -o EDF
+```
+$ gcc main.c func_def.c  -o EDF
+```
 
-Sample:
-________________________________________________________________
-Tasks 	  | Arrival	| Execution     | Deadline     | Period    
-----------------------------------------------------------------
-T1	  |   1		|	  3 	|	6      |   9 
-T2	  |   3		|	  2 	|	5      |   12 
-T3	  |   4		|	  4 	|	10     |   16 
-----------------------------------------------------------------
+### Sample
+
+| Tasks | Arrival	| Execution  |  Deadline | Period |  
+|:-----:|:---------:|:----------:|:---------:|:-------:
+|T1	    |   1		|	  3 	 |	6        |   9    |
+|T2	    |   3		|	  2 	 |	5        |   12   |
+|T3	    |   4		|	  4 	 |	10       |   16   |
 
 
-How the program looks like
 
+### How the program looks like
+```bash
 winston@winston-VirtualBox:~/EDF_Scheduler$ ./EDF
 Enter number of tasks
 3
@@ -85,4 +90,4 @@ Tasks can be scheduled
 46  Idle
 47  Idle
 48  Idle
-
+```
